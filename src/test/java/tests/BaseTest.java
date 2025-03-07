@@ -61,6 +61,10 @@ public class BaseTest {
 //                chrome standalone url
                 driver = new RemoteWebDriver(new URL("http://localhost:4441"), options);
             }
+            else if (platform.equalsIgnoreCase("github_actions")) {
+                options.addArguments("--headless");
+                driver = new ChromeDriver();
+            }
         } else if (browser.equalsIgnoreCase("Safari")) {
             if (AppConstants.platformName.equalsIgnoreCase("local")) {
 
