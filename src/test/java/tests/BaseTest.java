@@ -10,13 +10,10 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
@@ -37,7 +34,7 @@ public class BaseTest {
 
     @Parameters("browserName")
     @BeforeMethod
-    public void setUp(@Optional String browserName, ITestResult iTestResult) throws MalformedURLException, InstantiationException, IllegalAccessException {
+    public void setUp(@Optional String browserName, ITestResult iTestResult) throws MalformedURLException {
 
 
         String browser;
