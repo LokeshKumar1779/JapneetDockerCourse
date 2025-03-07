@@ -78,6 +78,10 @@ public class BaseTest {
             } else if (platform.equalsIgnoreCase("remote")) {
                 driver = new RemoteWebDriver(new URL("http://localhost:4442"), options);
             }
+            else if (platform.equalsIgnoreCase("github_actions")) {
+                options.addArguments("--headless");
+                driver = new ChromeDriver();
+            }
         }
         else {
             throw new RuntimeException("Not supported browser..");

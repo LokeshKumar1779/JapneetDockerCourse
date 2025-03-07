@@ -60,7 +60,7 @@
       <artifactId>maven-surefire-plugin</artifactId>
       <version>3.5.2</version>
       <configuration>
-        <parallel>tests</parallel>
+<!--        <parallel>tests</parallel>-->
         <suiteXmlFiles>
           <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
