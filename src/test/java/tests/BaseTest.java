@@ -63,6 +63,9 @@ public class BaseTest {
             }
             else if (platform.equalsIgnoreCase("github_actions")) {
                 options.addArguments("--headless");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-gpu");
+
                 driver = new ChromeDriver();
             }
         } else if (browser.equalsIgnoreCase("Safari")) {
@@ -80,6 +83,8 @@ public class BaseTest {
             }
             else if (platform.equalsIgnoreCase("github_actions")) {
                 options.addArguments("--headless");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-gpu");
                 driver = new ChromeDriver();
             }
         }
