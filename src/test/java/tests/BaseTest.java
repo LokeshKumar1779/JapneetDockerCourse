@@ -61,6 +61,7 @@ public class BaseTest {
                 driver = new ChromeDriver();
                 logger.info("Chrome driver launched..");
             } else if (platform.equalsIgnoreCase("remote")) {
+//                chrome standalone url
                 driver = new RemoteWebDriver(new URL("http://localhost:4441"), options);
             }
         } else if (browser.equalsIgnoreCase("Safari")) {
