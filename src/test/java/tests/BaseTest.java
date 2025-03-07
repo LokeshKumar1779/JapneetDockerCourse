@@ -65,7 +65,7 @@ public class BaseTest {
                 options.addArguments("--headless");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-gpu");
-
+                options.addArguments("user-data-dir=/Users/lokeshkumar/Library/Application Support/Google/Chrome/Profile4");
                 driver = new ChromeDriver();
             }
         } else if (browser.equalsIgnoreCase("Safari")) {
